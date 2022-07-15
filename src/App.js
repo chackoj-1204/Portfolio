@@ -9,8 +9,7 @@ import ContactMe from "./components/ContactMe";
 import AboutUs from "./components/AboutUs";
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
-import Lottie from "react-lottie";
-import * as location from "./79794-world-locations.json";
+
 
 const App = () => {
   
