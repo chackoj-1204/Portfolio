@@ -94,7 +94,7 @@ const ContentStyled = styled.section`
       width:100%;
     }
     .grid{
-      width:1500px;
+      width:100%;
       margin-top:50px;
       margin-bottom:50px;
     }
