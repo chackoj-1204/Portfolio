@@ -11,6 +11,26 @@ const ContactMe = ({username, campaigns, updateCampaign, deleteCampaign }) => {
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
 
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", name, email, message }),
+    })
+      .then(() => alert("Message sent!"))
+      .catch((error) => alert(error));
+  }
+
+
   const handleEmailInput = (event) => {
     setEmail(event.target.value);
   };
@@ -20,13 +40,11 @@ const ContactMe = ({username, campaigns, updateCampaign, deleteCampaign }) => {
   const handleMessageInput = (event) => {
     setMessage(event.target.value);
   };
-  const handlePress = () =>{
-    console.log("submit");
-  }
+
   return (
     <section id="contact">
       <ContentStyled className="content-section">
-          <Form className="container">
+          <Form className="container" netlify>
             <Row className="mb-3">
               <h2 className="header">
                 Contact Me
@@ -70,7 +88,7 @@ const ContactMe = ({username, campaigns, updateCampaign, deleteCampaign }) => {
               ></TextareaAutosize>
             </Form.Group>
 
-            <Button onClick={handlePress} className="mb-3">
+            <Button onClick={handleSubmit} className="mb-3">
               Submit
             </Button>
 
