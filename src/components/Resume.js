@@ -12,8 +12,8 @@ const Resume = (props) => {
 
   return (
     <AccountStyled>
-      <section id="resume">
-        <Container fluid className="p-0" >
+      <section  id="resume" className="pt-5">
+        <Container fluid className="pt-5 px-0" >
               <h4 className="header">Resume</h4>
               <iframe src="https://docs.google.com/document/d/1CJLRZJhYOhlza636FmzYmamlDisCgnrp_VEihWGF2u8/edit?usp=sharing" allowFullScreen = "true" height = "1000" className="screen"/>            
           

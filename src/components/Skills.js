@@ -11,7 +11,7 @@ const Skills = () => {
   };
 
   return (
-    <section id="resume">
+    <section id="skills">
       <ContentStyled className="content-section">
         <p>
           Skills

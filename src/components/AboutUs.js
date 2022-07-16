@@ -24,7 +24,7 @@ const ContentStyled = styled.section`
     }
     .container{
       padding-top: 300px;
-      padding-bottom: 500px;
+      padding-bottom: 400px;
       margin-left: 10px;
     }
 `;

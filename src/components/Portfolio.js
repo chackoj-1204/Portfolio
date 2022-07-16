@@ -92,6 +92,7 @@ const ContentStyled = styled.section`
     }
     .fullwidth{
       width:100%;
+      padding-top:100px;
     }
     .grid{
       width:100%;
