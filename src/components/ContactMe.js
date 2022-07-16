@@ -26,7 +26,7 @@ const ContactMe = ({username, campaigns, updateCampaign, deleteCampaign }) => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", name, email, message }),
     })
-      .then(() => {alert("Message sent!");setEmail("");setName("");setMessage("")})
+      .then(() => {alert("Message sent!");})
       .catch((error) => alert(error));
   }
 
