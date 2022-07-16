@@ -16,7 +16,6 @@ const App = () => {
     <ContentStyled>
       <Header/>
       <AboutUs/>
-      <Skills/>
       <Portfolio/>
       <Resume/>
       <ContactMe/>
