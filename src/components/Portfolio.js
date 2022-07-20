@@ -17,6 +17,8 @@ import jake2 from '../Images/jake2.png';
 import heartAttack from '../Images/heart.png';
 import anime from '../Images/animegif.gif';
 import signLanguage from '../Images/sign.png';
+import review from '../Images/review.png';
+import face from '../Images/emotion.png';
 
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
@@ -30,6 +32,9 @@ const Portfolio = () => {
                     {title:"Heart Attack Prediction SVM",subheader:"Uses 14 data points to predict whether the patient is experiencing a heart attack.",img:heartAttack, content:"Used sklearn's SVM model to predict whether a patient is experiencing a heart attack based off age, sex, cp, trtbps, chol, fbs, restecg, thalachh, exng, oldpeak, slp, caa, and thall. The SVM model achieved a accuracy of 87.5% on the test dataset. The image above shows the data used to predict along with the output which is 1 if the patient is having a heart attack and 0 if the patient is not. "},
                     {title:"Anime Face GAN",subheader:"Trained on an image dataset of over 60,0000 images.",img:anime, content:"Used a GAN with disciminator and generator both using dense layers. However, the images had to be downgraded because my computer could not train on high resolution images. "},
                     {title:"Sign language AI",subheader:"Trained on a dataset of sign language letters labeled with the english letter",img:signLanguage, content:"Used a Convolutional neural network with 3 convolution + maxpool2d layers before flattening and connecting to two dense layers with the last outputing to 29 softmax neurons to determine which character the model predicts. The model achieved a 92% accuracy on the test dataset."},
+                    {title:"Review Sentiment Analysis AI",subheader:"Trained on the imbd review dataset with 88,0000 words",img:review, content:"Used an Embedding layer with 16 dimensions to group words by context and then averaged one axis and used two dense layers with the last using the sigmoid activation function with binary-crossentropy loss with 0 representing negative and 1 representing positive."},
+                    {title:"Face Emotion Detection AI",subheader:"Trained on a dataset of 48x48 black and white images of faces",img:face, content:"Used 3 conv2d layers and maxpooling layers to output to a dense layer with outputs for each emotion with a softmax activation function. Used sparse categorical loss and got an accuracy of approximately 60%."},
+
                   ];
   
 
