@@ -11,7 +11,7 @@ import {
 const Header = ({ noLoginButton, logOut, haveIcon = true, username }) => {
   return (
     <HeaderStyle>
-      <Navbar className = "fullwidth navbar-custom" fixed = "top">
+      <Navbar className = "fullwidth navbar-custom" fixed = "top" expand = "lg" variant="dark">
         <Container className="fullwidth">
           <Navbar.Brand href="#about">
             <Nav.Link className="logo" href="/">
