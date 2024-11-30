@@ -15,7 +15,7 @@ const Resume = (props) => {
       <section  id="resume" className="pt-5">
         <Container fluid className="pt-5 px-0" >
               <h4 className="header">Resume</h4>
-              <iframe src="https://docs.google.com/document/d/1CJLRZJhYOhlza636FmzYmamlDisCgnrp_VEihWGF2u8/edit?usp=sharing" allowFullScreen = "true" height = "1000" className="screen"/>            
+              <iframe src="https://docs.google.com/document/d/1-Sv7QHn9wgGqUDEYCoMhAlyWcWN1g94Q/edit?usp=sharing&ouid=101121697690058227083&rtpof=true&sd=true" allowFullScreen = "true" height = "1000" className="screen"/>
           
           
         </Container>
